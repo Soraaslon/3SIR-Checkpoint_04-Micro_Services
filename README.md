@@ -91,7 +91,7 @@ docker run -d --name db --rm -e MYSQL_ROOT_PASSWORD=root_pwd -e MYSQL_USER=new_u
 2. Rodar a API a partir da imagem publicada no Docker Hub:
 
 ```bash
-docker run --name api -e SPRING_DATASOURCE_URL="jdbc:mysql://host.docker.internal:3306/db_microservices?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC" -p 8080:8080 soraaslon/3sir-checkpoint_04-micro_services
+docker run -d --name api --rm -e SPRING_DATASOURCE_URL="jdbc:mysql://host.docker.internal:3306/db_microservices?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC" -p 8080:8080 soraaslon/3sir-checkpoint_04-micro_services
 ```
 
 ---
