@@ -1,6 +1,6 @@
 # Microservices and Web Engineering: Checkpoint 05
 
-Este repositório contém o projeto desenvolvido para o Checkpoint da matéria de **Microservices and Web Engineering** do 2º semestre de Análise e Desenvolvimento de Sistemas.
+Este repositório contém o projeto desenvolvido para o Checkpoint da matéria de **Microservices and Web Engineering** do 3° ano de Sistemas de Informação.
 
 **Professor:** Antonio Carlos de Lima Júnior
 
