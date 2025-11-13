@@ -23,7 +23,13 @@ jobs:
         run: |
           docker compose up -d
           ./server/run-integration-tests.sh
-
+      - name: Upload dos Artefatos gerados nos Testes
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-dos-testes
+          path: |
+            professional_create.json
+            professional_list.json
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
