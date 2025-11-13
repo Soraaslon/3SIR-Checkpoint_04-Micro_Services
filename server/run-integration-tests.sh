@@ -2,8 +2,8 @@
 
 set -e
 
-apt update
-apt install -y jq
+sudo apt update
+sudo apt install -y jq
 
 HTTP_STATUS=$(
     curl -X 'POST' \
