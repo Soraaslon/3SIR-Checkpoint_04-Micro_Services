@@ -24,6 +24,10 @@ if [ "$HTTP_STATUS" -ne 201 ]; then
     exit 1  
 fi
 
+echo "--- Conteúdo do professional_create.json ---"
+cat professional_create.json
+echo "-------------------------------------------"
+
 PROFISSIONAL_ID=$(jq '.id' professional_create.json)
 
 echo "Profissional criado com ID: $PROFISSIONAL_ID"
@@ -46,3 +50,7 @@ if [ "$HTTP_STATUS" -ne 200 ]; then
     echo "Erro ao acessar a API de profissionais"
     exit 1  
 fi
+
+echo "--- Conteúdo do professional_list.json ---"
+cat professional_list.json
+echo "------------------------------------------"
